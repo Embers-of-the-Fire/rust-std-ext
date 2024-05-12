@@ -9,7 +9,7 @@ pub trait ResultExt<T, E> {
     /// ## Example
     /// 
     /// ```rust
-    /// use std_ext::result::ResultExt;
+    /// use rs_std_ext::result::ResultExt;
     /// 
     /// let mut x: Result<String, usize> = Ok("4".into());
     /// assert_eq!(x.tap_mut(|s| s.push('2')), Ok("42".into()));
@@ -23,7 +23,7 @@ pub trait ResultExt<T, E> {
     /// ## Example
     /// 
     /// ```rust
-    /// use std_ext::result::ResultExt;
+    /// use rs_std_ext::result::ResultExt;
     /// 
     /// let mut x: Result<String, usize> = Err(40);
     /// assert_eq!(x.tap_err_mut(|s| *s += 2), Err(42));
@@ -35,7 +35,7 @@ pub trait ResultExt<T, E> {
     /// ## Example
     /// 
     /// ```rust
-    /// use std_ext::result::ResultExt;
+    /// use rs_std_ext::result::ResultExt;
     /// 
     /// let x: Result<&str, usize> = Ok("foo");
     /// assert_eq!(x.swap(), Err("foo"));

@@ -14,7 +14,7 @@ pub trait OptionExt<T> {
     /// ## Example
     /// 
     /// ```rust
-    /// use std_ext::option::OptionExt;
+    /// use rs_std_ext::option::OptionExt;
     /// 
     /// assert_eq!(Some("err").err_or(0), Err("err"));
     /// assert_eq!(None::<&str>.err_or(0), Ok(0));
@@ -29,7 +29,7 @@ pub trait OptionExt<T> {
     /// ## Example
     /// 
     /// ```rust
-    /// use std_ext::option::OptionExt;
+    /// use rs_std_ext::option::OptionExt;
     /// 
     /// assert_eq!(Some("err").err_or_else(|| 0), Err("err"));
     /// assert_eq!(None::<&str>.err_or_else(|| 0), Ok(0));
@@ -45,7 +45,7 @@ pub trait OptionExt<T> {
     /// ## Example
     /// 
     /// ```rust
-    /// use std_ext::option::OptionExt;
+    /// use rs_std_ext::option::OptionExt;
     /// 
     /// assert_eq!(Some("err").err_or_default::<usize>(), Err("err"));
     /// assert_eq!(None::<&str>.err_or_default::<usize>(), Ok(0));
@@ -59,7 +59,7 @@ pub trait OptionExt<T> {
     /// ## Example
     /// 
     /// ```rust
-    /// use std_ext::option::OptionExt;
+    /// use rs_std_ext::option::OptionExt;
     /// 
     /// assert_eq!(None::<usize>.is_none_or(|&i| i == 2), true);
     /// assert_eq!(Some(5).is_none_or(|&i| i == 2), false);
@@ -75,7 +75,7 @@ pub trait OptionExt<T> {
     /// ## Example
     /// 
     /// ```rust,should_panic
-    /// use std_ext::option::OptionExt;
+    /// use rs_std_ext::option::OptionExt;
     /// 
     /// let x: Option<&str> = Some("10");
     /// x.expect_none("fruits are healthy");// panics with `fruits are healthy`
@@ -95,7 +95,7 @@ pub trait OptionExt<T> {
     /// ## Example
     /// 
     /// ```rust
-    /// use std_ext::option::OptionExt;
+    /// use rs_std_ext::option::OptionExt;
     /// 
     /// let mut x: Option<String> = Some("4".into());
     /// assert_eq!(x.tap_mut(|s| s.push('2')), Some("42".into()));

@@ -1,4 +1,4 @@
-use std_ext::tuple::{TupleConcat, TupleInsert, TupleRemove, TupleZip};
+use rs_std_ext::tuple::{TupleConcat, TupleInsert, TupleRemove, TupleZip};
 
 #[test]
 fn test_tuple_zip() {

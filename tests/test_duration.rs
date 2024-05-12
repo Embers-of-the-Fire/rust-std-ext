@@ -4,7 +4,7 @@ use num::{bigint::Sign, BigInt};
 
 #[test]
 fn test_duration_fallable() {
-    use std_ext::time::DurationNumExtFallible;
+    use rs_std_ext::time::DurationNumExtFallible;
 
     let d = BigInt::new(Sign::Plus, vec![10]).milliseconds();
     assert_eq!(d, Some(Duration::from_millis(10)));
@@ -21,7 +21,7 @@ fn test_duration_fallable() {
 
 #[test]
 fn test_duration_infallable() {
-    use std_ext::time::DurationNumExt;
+    use rs_std_ext::time::DurationNumExt;
     let d = 10u8.seconds();
     assert_eq!(d, Duration::from_secs(10));
 }

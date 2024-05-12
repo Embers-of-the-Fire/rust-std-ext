@@ -1,4 +1,4 @@
-# `std-ext`
+# `rs-std-ext`
 
 This crate provides some additions to the standard library api.
 
@@ -11,7 +11,7 @@ Take `std::option::Option` as an example:
 
 ```rust
 // import the trait
-use std_ext::option::OptionExt;
+use rs_std_ext::option::OptionExt;
 
 let op: Option<usize> = Some(42);
 assert_eq! (
@@ -21,9 +21,9 @@ assert_eq! (
 );
 ```
 
-For extended methods, read the documentation on [docs.rs](docs.rs).
+For extended methods, read the documentation on [docs.rs](https://docs.rs/rs-std-ext).
 The layout of the extension trait basically matches the layout of rust std and rust core,
-with `Ext` as a suffix, e.g. the trait for `std::option::Option` is `std_ext::option::OptionExt`.
+with `Ext` as a suffix, e.g. the trait for `std::option::Option` is `rs_std_ext::option::OptionExt`.
 
 ## License
 

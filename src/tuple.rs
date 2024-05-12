@@ -15,7 +15,7 @@
 /// ## Example
 ///
 /// ```rust
-/// use std_ext::tuple::TupleZip;
+/// use rs_std_ext::tuple::TupleZip;
 ///
 /// let x = (10u8, 'a');
 /// let y = x.zip(-5i32);
@@ -39,7 +39,7 @@ pub trait TupleZip<T> {
 /// ## Example
 ///
 /// ```rust
-/// use std_ext::tuple::TupleInsertExact;
+/// use rs_std_ext::tuple::TupleInsertExact;
 ///
 /// let x = (10u8, 'a');
 /// let y = <(u8, char) as TupleInsertExact<1, _>>::insert(x, -5i32);
@@ -61,7 +61,7 @@ pub trait TupleInsertExact<const POS: usize, T> {
 /// ## Example
 ///
 /// ```rust
-/// use std_ext::tuple::TupleInsert;
+/// use rs_std_ext::tuple::TupleInsert;
 ///
 /// let x = (10u8, 'a');
 /// let y = x.insert::<1>(-5i32);
@@ -87,7 +87,7 @@ pub trait TupleInsert<T> {
 /// ## Example
 ///
 /// ```rust
-/// use std_ext::tuple::TupleRemoveExact;
+/// use rs_std_ext::tuple::TupleRemoveExact;
 ///
 /// let x = (10u8, 'a', -5i32);
 /// let y = <(u8, char, i32) as TupleRemoveExact<1>>::remove(x);
@@ -109,7 +109,7 @@ pub trait TupleRemoveExact<const POS: usize> {
 /// ## Example
 ///
 /// ```rust
-/// use std_ext::tuple::TupleRemove;
+/// use rs_std_ext::tuple::TupleRemove;
 ///
 /// let x = (10u8, 'a', -5i32);
 /// let y = x.remove::<1>();
@@ -137,7 +137,7 @@ pub trait TupleRemove {
 /// ## Example
 ///
 /// ```rust
-/// use std_ext::tuple::TupleConcat;
+/// use rs_std_ext::tuple::TupleConcat;
 ///
 /// let x = (10u8, 'a');
 /// let y = (-5i32, "foo");

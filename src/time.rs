@@ -15,7 +15,7 @@ pub trait DurationNumExt: DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExt;
+    /// use rs_std_ext::time::DurationNumExt;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u8.seconds(), Duration::from_secs(10u64));
@@ -33,7 +33,7 @@ pub trait DurationNumExt: DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExt;
+    /// use rs_std_ext::time::DurationNumExt;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u8.milliseconds(), Duration::from_millis(10u64));
@@ -51,7 +51,7 @@ pub trait DurationNumExt: DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExt;
+    /// use rs_std_ext::time::DurationNumExt;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u8.microseconds(), Duration::from_micros(10u64));
@@ -69,7 +69,7 @@ pub trait DurationNumExt: DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExt;
+    /// use rs_std_ext::time::DurationNumExt;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u8.nanoseconds(), Duration::from_nanos(10u64));
@@ -87,7 +87,7 @@ pub trait DurationNumExt: DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExt;
+    /// use rs_std_ext::time::DurationNumExt;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.minutes(), Duration::from_secs(10u64 * 60));
@@ -101,7 +101,7 @@ pub trait DurationNumExt: DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExt;
+    /// use rs_std_ext::time::DurationNumExt;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.hours(), Duration::from_secs(10u64 * 60 * 60));
@@ -115,7 +115,7 @@ pub trait DurationNumExt: DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExt;
+    /// use rs_std_ext::time::DurationNumExt;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.days(), Duration::from_secs(10u64 * 60 * 60 * 24));
@@ -145,7 +145,7 @@ pub trait DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExtFallible;
+    /// use rs_std_ext::time::DurationNumExtFallible;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.seconds(), Some(Duration::from_secs(10u64)));
@@ -158,7 +158,7 @@ pub trait DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExtFallible;
+    /// use rs_std_ext::time::DurationNumExtFallible;
     /// use std::time::Duration;
     ///
     ///
@@ -172,7 +172,7 @@ pub trait DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExtFallible;
+    /// use rs_std_ext::time::DurationNumExtFallible;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.microseconds(), Some(Duration::from_micros(10u64)));
@@ -185,7 +185,7 @@ pub trait DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExtFallible;
+    /// use rs_std_ext::time::DurationNumExtFallible;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.nanoseconds(), Some(Duration::from_nanos(10u64)));
@@ -198,7 +198,7 @@ pub trait DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExtFallible;
+    /// use rs_std_ext::time::DurationNumExtFallible;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.minutes(), Some(Duration::from_secs(10u64 * 60)));
@@ -210,7 +210,7 @@ pub trait DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExtFallible;
+    /// use rs_std_ext::time::DurationNumExtFallible;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.hours(), Some(Duration::from_secs(10u64 * 60 * 60)));
@@ -222,7 +222,7 @@ pub trait DurationNumExtFallible {
     /// ## Example
     ///
     /// ```rust
-    /// use std_ext::time::DurationNumExtFallible;
+    /// use rs_std_ext::time::DurationNumExtFallible;
     /// use std::time::Duration;
     ///
     /// assert_eq!(10u128.days(), Some(Duration::from_secs(10u64 * 60 * 60 * 24)));

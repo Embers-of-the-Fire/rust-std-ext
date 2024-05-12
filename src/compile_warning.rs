@@ -19,7 +19,7 @@
 /// If you want to override it, use the following syntax:
 ///
 /// ```rust,ignore
-/// use std_ext::compile_warning;
+/// use rs_std_ext::compile_warning;
 ///
 /// compile_warning!(MW: "warning");
 /// // this expand to
