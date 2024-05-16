@@ -29,5 +29,7 @@ pub mod option;
 pub mod result;
 pub mod time;
 pub mod tuple;
+pub mod vec;
+pub mod unwrap;
 
 mod compile_warning;
