@@ -16,6 +16,7 @@ use rs_std_ext::option::OptionExt;
 let op: Option<usize> = Some(42);
 assert_eq! (
     // this method is defined by the `OptionExt` trait
+    // Note: The method is deprecated. Use std's method instead.
     op.is_none_or(|x| *x > 0),
     true
 );

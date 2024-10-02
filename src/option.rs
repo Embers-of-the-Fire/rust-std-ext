@@ -64,6 +64,7 @@ pub trait OptionExt<T> {
     /// assert_eq!(None::<usize>.is_none_or(|&i| i == 2), true);
     /// assert_eq!(Some(5).is_none_or(|&i| i == 2), false);
     /// ```
+    #[deprecated = "Use `Option::is_none_or` (offered by std) instead."]
     fn is_none_or(&self, f: impl FnOnce(&T) -> bool) -> bool;
 
     /// Returns nothing, consuming the value contained.
